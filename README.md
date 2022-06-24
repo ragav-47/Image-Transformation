@@ -1,3 +1,6 @@
+### EX NO : 05
+### DATE  : 30.04.2022
+# <p align="center">Rotating the Gaming Object</p>
 # Image-Transformation
 ## AIM:
 To perform image transformation such as Translation, Scaling, Shearing, Reflection, Rotation and Cropping using OpenCV and Python.
