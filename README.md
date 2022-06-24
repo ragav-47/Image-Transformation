@@ -20,6 +20,11 @@ Shear the image.
 Reflect of image.
 ### Step 6:
 Rotate the image.
+
+<br/>
+<br/>
+<br/>
+
 ### Step 7:
 Crop the image.
 ### Step 8:
@@ -37,6 +42,8 @@ plt.axis('off')
 plt.imshow(input_img)
 plt.show()
 rows,cols,dim=input_img.shape
+
+
 i)Image Translation
 M=np.float32([[1,0,20],
              [0,1,50],
@@ -45,7 +52,6 @@ translated_img=cv2.warpPerspective(input_img,M,(cols,rows))
 plt.axis('off')
 plt.imshow(translated_img)
 plt.show()
-
 ii) Image Scaling
 M=np.float32([[1.5,0,0],
              [0,2,0],
@@ -54,7 +60,6 @@ scaled_img=cv2.warpPerspective(input_img,M,(cols,rows))
 plt.axis('off')
 plt.imshow(scaled_img)
 plt.show()
-
 iii)Image shearing
 M_x=np.float32([[1,0.2,0],
                [0,1,0],
@@ -70,7 +75,6 @@ plt.show()
 plt.axis('off')
 plt.imshow(sheared_img_yaxis)
 plt.show()
-
 iv)Image Reflection
 M_x=np.float32([[1,0,0],
                [0,-1,rows],
@@ -86,7 +90,6 @@ plt.show()
 plt.axis('off')
 plt.imshow(reflected_img_yaxis)
 plt.show()
-
 v)Image Rotation
 angle=np.radians(45)
 M=np.float32([[np.cos(angle),-(np.sin(angle)),0],
@@ -96,13 +99,11 @@ rotated_img=cv2.warpPerspective(input_img,M,(cols,rows))
 plt.axis('off')
 plt.imshow(rotated_img)
 plt.show()
-
 vi)Image Cropping
 cropped_img=input_img[20:150,60:230]
 plt.axis('off')
 plt.imshow(cropped_img)
 plt.show()
-
 ```
 ## Output:
 ### i)Image Translation
@@ -122,6 +123,12 @@ plt.show()
 ![output4](https://user-images.githubusercontent.com/75235488/166113510-8b7be8f3-d2d4-4285-b536-390372127e6e.png)
 ![output5](https://user-images.githubusercontent.com/75235488/166113511-7e341173-13bb-4c40-becb-ea0d974f9bbe.png)
 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 ### v)Image Rotation
 ![output 6](https://user-images.githubusercontent.com/75235488/166113519-f5e16e18-b20c-41bd-ade7-b3059636b1a6.png)
